@@ -15,7 +15,4 @@ jobs:
 
       - script: |
         echo Hello Pipelines
-        displayName: "Demo Script"
-
         # The displayName is shows in the pipeline UI when a build runs
-        displayName: "Demo Script"
