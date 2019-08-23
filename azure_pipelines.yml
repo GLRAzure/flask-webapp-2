@@ -1,0 +1,21 @@
+# build pipeline for Python web app deploying to Azure App Service
+
+trigger:
+  - master
+
+variables:
+  ConnectedServiceName: "Andrej's Azure Subscription"
+
+jobs:
+  - job: hello_world
+    displayName: Hello World
+    pool:
+      vmImage: "ubuntu-latest"
+    steps:
+
+      - script: |
+        echo Hello Pipelines
+        displayName: "Demo Script"
+
+        # The displayName is shows in the pipeline UI when a build runs
+        displayName: "Demo Script"
